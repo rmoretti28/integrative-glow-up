@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import heroImg from "@/assets/hero.jpg";
+import heroAsset from "@/assets/hero.jpg.asset.json";
 import { whatsappUrl } from "@/lib/site-config";
 
 export function Hero() {
@@ -47,11 +47,11 @@ export function Hero() {
           className="relative"
         >
           <img
-            src={heroImg}
-            width={1600}
-            height={1200}
-            alt="Chá verde, ervas secas e agulhas de acupuntura sobre tecido verde sálvia"
-            className="w-full rounded-[2rem] object-cover shadow-xl shadow-foreground/5"
+            src={heroAsset.url}
+            width={1067}
+            height={1600}
+            alt="Dra. Giselle Moretti segurando uma toranja fatiada"
+            className="mx-auto aspect-[4/5] w-full max-w-md rounded-[2rem] object-cover object-top shadow-xl shadow-foreground/5"
           />
         </motion.div>
       </div>

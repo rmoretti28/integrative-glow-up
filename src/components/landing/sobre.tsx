@@ -1,4 +1,4 @@
-import gisselleImg from "@/assets/giselle.jpg";
+import gisselleAsset from "@/assets/giselle.jpg.asset.json";
 import { Reveal } from "./reveal";
 
 export function Sobre() {
@@ -9,9 +9,9 @@ export function Sobre() {
           <div className="relative mx-auto w-fit">
             <div className="absolute -inset-4 rounded-full bg-sage-soft/60" aria-hidden="true" />
             <img
-              src={gisselleImg}
-              width={1008}
-              height={1200}
+              src={gisselleAsset.url}
+              width={1067}
+              height={1600}
               loading="lazy"
               alt="Dra. Giselle Moretti, nutricionista clínica e acupunturista"
               className="relative aspect-square w-64 rounded-full object-cover object-top shadow-lg shadow-foreground/10 sm:w-80"
