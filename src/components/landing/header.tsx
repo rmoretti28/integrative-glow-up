@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import { siteConfig, whatsappUrl } from "@/lib/site-config";
 
 export function Header() {
@@ -10,15 +11,27 @@ export function Header() {
         >
           {siteConfig.nome}
         </a>
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium tracking-wide text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-        >
-          Agendar Consulta
-        </a>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <a
+            href={siteConfig.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="inline-flex items-center justify-center rounded-full p-2 text-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+          >
+            <Instagram size={22} />
+          </a>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium tracking-wide text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+          >
+            Agendar Consulta
+          </a>
+        </div>
       </div>
     </header>
   );
 }
+
