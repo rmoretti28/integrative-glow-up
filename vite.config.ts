@@ -6,7 +6,4 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig({
-  base: '/integrative-glow-up/',
-  // ... outras configurações existentes ...
-})
+export default defineConfig({})
