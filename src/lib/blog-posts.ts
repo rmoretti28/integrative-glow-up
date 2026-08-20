@@ -3,7 +3,6 @@ export type BlogPost = {
   titulo: string;
   resumo: string;
   categoria: string;
-  data: string; // ISO
   dataLabel: string;
   leitura: string;
   paragrafos: string[];
@@ -16,7 +15,6 @@ export const blogPosts: BlogPost[] = [
     resumo:
       "Resistência à insulina, inflamação e estagnação do Fígado: entenda o que está por trás dos sintomas da Síndrome dos Ovários Policísticos e o que muda no prato.",
     categoria: "Saúde hormonal",
-    data: "2026-08-05",
     dataLabel: "5 de agosto de 2026",
     leitura: "5 min de leitura",
     paragrafos: [
@@ -32,7 +30,6 @@ export const blogPosts: BlogPost[] = [
     resumo:
       "Fogachos, insônia e oscilações de humor não precisam ser inevitáveis. Veja como ajustes alimentares e acupuntura acalmam o climatério.",
     categoria: "Climatério",
-    data: "2026-07-22",
     dataLabel: "22 de julho de 2026",
     leitura: "4 min de leitura",
     paragrafos: [
@@ -48,7 +45,6 @@ export const blogPosts: BlogPost[] = [
     resumo:
       "Alimentos frios, quentes, secantes ou umidificantes — um guia prático para começar a escolher a comida também pelo efeito energético.",
     categoria: "Dietoterapia",
-    data: "2026-07-08",
     dataLabel: "8 de julho de 2026",
     leitura: "6 min de leitura",
     paragrafos: [

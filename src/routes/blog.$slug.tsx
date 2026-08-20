@@ -14,7 +14,10 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "Artigo não encontrado" }, { name: "robots", content: "noindex" }],
+        meta: [
+          { title: "Artigo não encontrado — Dra. Giselle Moretti" },
+          { name: "robots", content: "noindex" },
+        ],
       };
     }
     const { post } = loaderData;
@@ -31,7 +34,7 @@ export const Route = createFileRoute("/blog/$slug")({
     };
   },
   notFoundComponent: ArtigoNaoEncontrado,
-  component: BlogPost,
+  component: BlogPostPage,
 });
 
 function ArtigoNaoEncontrado() {
@@ -49,7 +52,7 @@ function ArtigoNaoEncontrado() {
   );
 }
 
-function BlogPost() {
+function BlogPostPage() {
   const { post } = Route.useLoaderData();
 
   return (

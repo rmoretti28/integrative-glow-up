@@ -62,7 +62,6 @@ export function Header() {
             aria-expanded={aberto}
             className="inline-flex items-center justify-center rounded-full p-2 text-foreground transition-colors hover:bg-primary/10 hover:text-primary lg:hidden"
           >
-            {aberto ? <Menu size={22} className="hidden" /> : null}
             {aberto ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
@@ -85,12 +84,12 @@ export function Header() {
                 </a>
               </li>
             ))}
-            <li className="pt-2">
+            <li className="pt-2 sm:hidden">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground sm:hidden"
+                className="inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground"
               >
                 Agendar Consulta
               </a>
