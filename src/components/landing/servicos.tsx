@@ -22,7 +22,7 @@ const servicos = [
     titulo: "Protocolos Integrativos",
     texto:
       "Programas de acompanhamento contínuo que combinam nutrição, acupuntura e fitoterapia chinesa para objetivos específicos.",
-    itens: ["Fertilidade e SOP", "Menopausa serena", "Reequilíbrio metabólico"],
+    itens: ["Fertilidade e SOMP", "Climatério e Menopausa\u00a0", "Reequilíbrio metabólico"],
   },
 ];
 
