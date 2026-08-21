@@ -2,7 +2,7 @@ import { Reveal } from "./reveal";
 
 const temas = [
   {
-    titulo: "SOP e desequilíbrios hormonais",
+    titulo: "SOMP e desequilíbrios hormonais",
     texto:
       "Regulação da resistência à insulina e do ciclo, com dietoterapia e pontos que harmonizam Fígado e Baço.",
   },
