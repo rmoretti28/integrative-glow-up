@@ -8,7 +8,7 @@ const servicos = [
     titulo: "Consulta Nutricional",
     texto:
       "Avaliação completa de exames, história clínica e hábitos, com plano alimentar individualizado e ajustes ao longo do acompanhamento.",
-    itens: ["Anamnese integrativa", "Plano alimentar personalizado", "Retornos guiados"],
+    itens: ["Anamnese integrativa", "Plano alimentar personalizado", "\n\nRetornos guiados"],
   },
   {
     icone: Sparkles,
