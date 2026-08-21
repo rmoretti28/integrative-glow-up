@@ -39,9 +39,9 @@ export function Sobre() {
               histórias antes de propor qualquer plano alimentar.
             </p>
             <p>
-              Meu propósito é simples: acompanhar cada mulher para que ela alcance a
-              melhor versão de si mesma, com leveza, constância e sem dietas
-              punitivas.
+              Meu propósito é guiar cada mulher na redescoberta da sua saúde e vitalidade.
+              <br />
+              Acredito em um acompanhamento de perto, respeitando o seu ritmo e o seu corpo, para conquistar resultados reais com leveza, constância e sem restrições severas.
             </p>
           </div>
         </Reveal>
