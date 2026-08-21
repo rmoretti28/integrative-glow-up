@@ -24,7 +24,7 @@ const temas = [
   {
     titulo: "Emagrecimento sustentável",
     texto:
-      "Retenção, compulsão e metabolismo tratados pela raiz — sem restrição extrema nem efeito sanfona.",
+      "Retenção, compulsão e metabolismo tratados pela raiz — sem restrição extrema.",
   },
   {
     titulo: "Digestão e inflamação",

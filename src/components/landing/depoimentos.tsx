@@ -9,28 +9,28 @@ import { Reveal } from "./reveal";
 
 const depoimentos = [
   {
-    nome: "Marina R.",
-    contexto: "SOP · 8 meses de acompanhamento",
+    nome: "Amanda R.",
+    contexto: "Resistência Insulinica- 8 meses de acompanhamento",
     texto:
-      "Depois de anos ouvindo que era só perder peso, finalmente entendi o que meu corpo estava pedindo. Meu ciclo voltou a ser regular e minha energia é outra.",
+      "Ótima nutri, super atenciosa em cada detalhe! Olhou todos os meus exames e problemas de saúde para passar as fórmulas e plano personalizado. Já emagreci bastante e melhorei muito! Bem atualizada com assuntos da saúde da mulher. ",
   },
   {
-    nome: "Cláudia F.",
-    contexto: "Climatério · 6 meses",
+    nome: "Andréia S.",
+    contexto: "Emagrecimento saudável · 6 meses",
     texto:
-      "As ondas de calor diminuíram muito já nas primeiras semanas de acupuntura. Voltei a dormir a noite inteira e isso mudou tudo no meu dia.",
+      " Consulta com a nutri Giselle foi muita boa, tem toda uma avaliação, formulário a preencher antes da consulta, então o tratamento com as vitaminas, orientações são super direcionadas, com foco e orientação consegui perder peso. Super atenciosa ! Recomendo muito !",
   },
   {
-    nome: "Beatriz L.",
-    contexto: "Ansiedade e intestino",
+    nome: "Daniela J. ",
+    contexto: "Enxaqueca e perimenopausa - 4 meses ",
     texto:
-      "A Giselle escuta de verdade. O plano alimentar coube na minha rotina e o inchaço que eu achava normal simplesmente foi embora.",
+      "A Gi é uma profissional ética, empática e responsável. Uma nutricionista atenciosa, humana e totalmente fora dos moldes engessados do mundo atual. Recomendo de olhos fechados.",
   },
   {
-    nome: "Rafaela M.",
-    contexto: "Preparação para engravidar",
+    nome: "Emília M .",
+    contexto: "Acupuntura ",
     texto:
-      "Fui acolhida em um momento delicado. O protocolo integrativo me deu segurança e hoje estou grávida do meu primeiro filho.",
+      "Maravilhosa !Atenta com as necessidades do paciente, sensível, acolhedora, profunda conhecedora do que faz. Estou muito feliz com os resultados de sua abordagem e pelo seu profissionalismo! ",
   },
 ];
 
