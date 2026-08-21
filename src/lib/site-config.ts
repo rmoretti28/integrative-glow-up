@@ -7,7 +7,7 @@ export const siteConfig = {
   instagram: "https://www.instagram.com/nutrigisellemoretti/",
   instagramHandle: "@nutrigisellemoretti",
   email: "contato@gisellemoretti.com.br",
-  endereco: "Atendimento presencial no Bairro de Coqueiros em Florianópolis",
+  endereco: "Atendimento on-line para todo o Brasil e  presencial em Florianópolis",
   horario: "Segunda a sexta, das 8h às 18h",
 };
 
