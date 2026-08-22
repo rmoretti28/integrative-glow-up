@@ -6,7 +6,7 @@ export const siteConfig = {
     "Olá, Dra. Giselle! Gostaria de agendar uma consulta de nutrição e MTC.",
   instagram: "https://www.instagram.com/nutrigisellemoretti/",
   instagramHandle: "@nutrigisellemoretti",
-  email: "contato@gisellemoretti.com.br",
+  email: "giselledsmoretti@gmail.com",
   endereco: "Atendimento on-line para todo o Brasil e  presencial em Florianópolis",
   horario: "Segunda a sexta, das 8h às 18h",
 };
