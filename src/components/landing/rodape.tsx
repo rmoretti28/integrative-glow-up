@@ -16,7 +16,7 @@ export function Rodape() {
           </p>
           <a
             href={whatsappUrl}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
           >
@@ -74,7 +74,7 @@ export function Rodape() {
         <div className="sticky bottom-0 mt-8 rounded-t-[2rem] border-t border-border/60 bg-background/95 px-5 py-4 text-center backdrop-blur-md">
           <a
             href={whatsappUrl}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
           >

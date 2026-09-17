@@ -66,7 +66,7 @@ export function Servicos() {
         <Reveal delay={0.1} className="mt-12 text-center">
           <a
             href={whatsappUrl}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
           >

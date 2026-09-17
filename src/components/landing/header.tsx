@@ -49,7 +49,7 @@ export function Header() {
           </a>
           <a
             href={whatsappUrl}
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
             className="hidden items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium tracking-wide text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg sm:inline-flex"
           >
@@ -87,7 +87,7 @@ export function Header() {
             <li className="pt-2 sm:hidden">
               <a
                 href={whatsappUrl}
-                target="_blank"
+                target="_self"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground"
               >
