@@ -11,6 +11,4 @@ export const siteConfig = {
   horario: "Segunda a sexta, das 8h às 18h",
 };
 
-export const whatsappUrl = `https://api.whatsapp.com/send?phone=${siteConfig.whatsappNumero}&text=${encodeURIComponent(
-  siteConfig.whatsappMensagem,
-)}`;
+export const whatsappUrl = `https://wa.me/${siteConfig.whatsappNumero}`;
