@@ -37,7 +37,7 @@ function AcupunturaPage() {
           <h1 className="mt-5 text-4xl leading-tight tracking-normal sm:text-5xl md:text-6xl">Acupuntura</h1>
           <p className="mt-5 max-w-2xl font-serif text-2xl leading-relaxed text-foreground sm:text-3xl">Um cuidado atento ao seu corpo, ao seu ritmo e à sua saúde.</p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">A Medicina Tradicional Chinesa olha para você de forma integral. As sessões de acupuntura são planejadas a partir dos seus sintomas, da sua história e das suas necessidades, em um atendimento individualizado e acolhedor.</p>
-          <Button asChild size="lg" className="mt-8 h-auto min-h-12 w-full whitespace-normal rounded-full py-3 text-center sm:w-auto">
+          <Button asChild size="lg" className="mt-8 h-auto min-h-12 max-w-full whitespace-normal rounded-full py-3 text-center">
             <a href={whatsappUrl} target="_self" rel="noopener noreferrer">Agendar sessão ou tirar dúvidas no{"\u00A0"}WhatsApp <ArrowRight aria-hidden="true" className="hidden sm:block" /></a>
           </Button>
         </div>
