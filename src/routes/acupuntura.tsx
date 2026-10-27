@@ -5,7 +5,7 @@ import { Rodape } from "@/components/landing/rodape";
 import { WhatsappButton } from "@/components/landing/whatsapp-button";
 import { Button } from "@/components/ui/button";
 import { siteConfig, whatsappUrl } from "@/lib/site-config";
-import giselleAsset from "@/assets/giselle.jpg.asset.json";
+import acupunturaAsset from "@/assets/acupuntura.jpg.asset.json";
 
 const titulo = "Acupuntura em Florianópolis — Dra. Giselle Moretti";
 const descricao = "Conheça o atendimento de acupuntura da Dra. Giselle Moretti em Florianópolis: avaliação individualizada, cuidado integrativo e agendamento pelo WhatsApp.";
@@ -45,7 +45,7 @@ function AcupunturaPage() {
 
       <section className="px-5 py-14 sm:px-8 md:py-20" aria-labelledby="cuidado-acupuntura">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1fr_2fr] md:items-center md:gap-16">
-          <img src={giselleAsset.url} alt="Dra. Giselle Moretti sorrindo" width={1067} height={1600} className="aspect-[4/5] w-full max-w-sm rounded-3xl object-cover object-top" />
+          <img src={acupunturaAsset.url} alt="Dra. Giselle Moretti segurando uma agulha fina de acupuntura" width={768} height={1152} className="aspect-[2/3] w-full max-w-sm rounded-3xl object-cover" />
           <div>
             <p className="text-sm text-primary">Medicina Tradicional Chinesa</p>
             <h2 id="cuidado-acupuntura" className="mt-3 text-3xl leading-tight tracking-normal sm:text-4xl">Escuta, equilíbrio e cuidado individualizado</h2>
