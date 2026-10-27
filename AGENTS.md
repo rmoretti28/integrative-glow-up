@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the dedicated acupuncture page at `/acupuntura` and reuse the shared header, footer, contact configuration and WhatsApp link so navigation and contact details remain consistent.
