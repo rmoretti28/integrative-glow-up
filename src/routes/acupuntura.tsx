@@ -33,7 +33,7 @@ function AcupunturaPage() {
       <Header />
       <section className="bg-sage-soft/50 px-5 py-14 sm:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="text-sm text-sage">Dra. Giselle Moretti · Atendimento presencial em Florianópolis</p>
+          <p className="text-sm text-sage">Dra. Giselle Moretti · Atendimento presencial e domiciliar em Florianópolis</p>
           <h1 className="mt-5 text-4xl leading-tight tracking-normal sm:text-5xl md:text-6xl">Acupuntura</h1>
           <p className="mt-5 max-w-2xl font-serif text-2xl leading-relaxed text-foreground sm:text-3xl">Um cuidado atento ao seu corpo, ao seu ritmo e à sua saúde.</p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">A Medicina Tradicional Chinesa olha para você de forma integral. As sessões de acupuntura são planejadas a partir dos seus sintomas, da sua história e das suas necessidades, em um atendimento individualizado e acolhedor.</p>
