@@ -128,9 +128,13 @@ function RootComponent() {
     const onClick = (e: MouseEvent) => {
       const a = (e.target as HTMLElement | null)?.closest?.("a");
       if (!a || !/whatsapp\.com|wa\.me/.test(a.href)) return;
-      import("@/integrations/supabase/client").then(({ supabase }) =>
-        supabase.from("whatsapp_clicks").insert({ page: window.location.pathname.slice(0, 200) }),
-      );
+      const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+      fetch(`${import.meta.env.VITE_SUPABASE_URL}/rest/v1/whatsapp_clicks`, {
+        method: "POST",
+        keepalive: true,
+        headers: { apikey: key, "Content-Type": "application/json", Prefer: "return=minimal" },
+        body: JSON.stringify({ page: window.location.pathname.slice(0, 200) }),
+      }).catch(() => {});
     };
     document.addEventListener("click", onClick, true);
     return () => document.removeEventListener("click", onClick, true);
