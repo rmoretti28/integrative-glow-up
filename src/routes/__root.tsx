@@ -124,6 +124,19 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as HTMLElement | null)?.closest?.("a");
+      if (!a || !/whatsapp\.com|wa\.me/.test(a.href)) return;
+      import("@/integrations/supabase/client").then(({ supabase }) =>
+        supabase.from("whatsapp_clicks").insert({ page: window.location.pathname.slice(0, 200) }),
+      );
+    };
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, []);
+
+
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
