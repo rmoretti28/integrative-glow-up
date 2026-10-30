@@ -128,8 +128,8 @@ function RootComponent() {
     const onClick = (e: MouseEvent) => {
       const a = (e.target as HTMLElement | null)?.closest?.("a");
       if (!a || !/whatsapp\.com|wa\.me/.test(a.href)) return;
-      const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
-      fetch(`${import.meta.env.VITE_SUPABASE_URL}/rest/v1/whatsapp_clicks`, {
+      const key = import.meta.env['VITE_SUPABASE_PUBLISHABLE_KEY'];
+      fetch(`${import.meta.env['VITE_SUPABASE_URL']}/rest/v1/whatsapp_clicks`, {
         method: "POST",
         keepalive: true,
         headers: { apikey: key, "Content-Type": "application/json", Prefer: "return=minimal" },
