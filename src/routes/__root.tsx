@@ -129,12 +129,40 @@ function RootComponent() {
       const a = (e.target as HTMLElement | null)?.closest?.("a");
       if (!a || !/whatsapp\.com|wa\.me/.test(a.href)) return;
       const key = import.meta.env['VITE_SUPABASE_PUBLISHABLE_KEY'];
-      fetch(`${import.meta.env['VITE_SUPABASE_URL']}/rest/v1/whatsapp_clicks`, {
-        method: "POST",
-        keepalive: true,
-        headers: { apikey: key, "Content-Type": "application/json", Prefer: "return=minimal" },
-        body: JSON.stringify({ page: window.location.pathname.slice(0, 200) }),
-      }).catch(() => {});
+      const send = () =>
+        fetch(`${import.meta.env['VITE_SUPABASE_URL']}/rest/v1/whatsapp_clicks`, {
+          method: "POST",
+          keepalive: true,
+          headers: { apikey: key, "Content-Type": "application/json", Prefer: "return=minimal" },
+          body: JSON.stringify({ page: window.location.pathname.slice(0, 200) }),
+        });
+
+      // Links opened with a modifier (new tab/window) are counted, then left alone.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) {
+        send().catch(() => {});
+        return;
+      }
+
+      // Same-tab links unload the page, which can abort the request before it
+      // leaves. Hold the navigation until the click is recorded (max ~400ms).
+      const target = a.href;
+      let done = false;
+      const go = () => {
+        if (done) return;
+        done = true;
+        window.location.href = target;
+      };
+      e.preventDefault();
+      const timer = window.setTimeout(go, 400);
+      send()
+        .then(() => {
+          window.clearTimeout(timer);
+          go();
+        })
+        .catch(() => {
+          window.clearTimeout(timer);
+          go();
+        });
     };
     document.addEventListener("click", onClick, true);
     return () => document.removeEventListener("click", onClick, true);
