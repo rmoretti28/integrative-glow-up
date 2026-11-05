@@ -1,5 +1,6 @@
 import { Instagram, MapPin, Clock } from "lucide-react";
 import { siteConfig, whatsappUrl } from "@/lib/site-config";
+import { AvisoParticulares } from "./aviso-particulares";
 import { Reveal } from "./reveal";
 
 export function Rodape() {
@@ -14,6 +15,7 @@ export function Rodape() {
             Agende sua primeira consulta e descubra o que o seu corpo vem tentando
             comunicar.
           </p>
+          <AvisoParticulares className="mx-auto mt-8 text-center" />
           <a
             href={whatsappUrl}
             target="_self"
