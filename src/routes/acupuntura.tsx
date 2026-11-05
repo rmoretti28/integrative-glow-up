@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Heart, Leaf, Moon } from "lucide-react";
 import { Header } from "@/components/landing/header";
+import { AvisoParticulares } from "@/components/landing/aviso-particulares";
 import { Rodape } from "@/components/landing/rodape";
 import { WhatsappButton } from "@/components/landing/whatsapp-button";
 import { Button } from "@/components/ui/button";
@@ -37,7 +38,8 @@ function AcupunturaPage() {
           <h1 className="mt-5 text-4xl leading-tight tracking-normal sm:text-5xl md:text-6xl">Acupuntura</h1>
           <p className="mt-5 max-w-2xl font-serif text-2xl leading-relaxed text-foreground sm:text-3xl">Um cuidado atento ao seu corpo, ao seu ritmo e à sua saúde.</p>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">A Medicina Tradicional Chinesa olha para você de forma integral. As sessões de acupuntura são planejadas a partir dos seus sintomas, da sua história e das suas necessidades, em um atendimento individualizado e acolhedor.</p>
-          <Button asChild size="lg" className="mt-8 h-auto min-h-12 max-w-full whitespace-normal rounded-full py-3 text-center">
+          <AvisoParticulares className="mt-8" />
+          <Button asChild size="lg" className="mt-4 h-auto min-h-12 max-w-full whitespace-normal rounded-full py-3 text-center">
             <a href={whatsappUrl} target="_self" rel="noopener noreferrer">Agendar sessão ou tirar dúvidas no{"\u00A0"}WhatsApp <ArrowRight aria-hidden="true" className="hidden sm:block" /></a>
           </Button>
         </div>
@@ -93,7 +95,8 @@ function AcupunturaPage() {
             ))}
           </div>
           <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted-foreground">A acupuntura não substitui diagnóstico médico, medicações prescritas ou atendimento de urgência. Converse sobre suas dúvidas e condições de saúde antes de iniciar as sessões.</p>
-          <div className="mt-10 flex flex-col items-start gap-4 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
+          <AvisoParticulares className="mt-8" />
+          <div className="mt-6 flex flex-col items-start gap-4 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-base text-foreground">Sessões presenciais em Florianópolis</p>
             <Button asChild size="lg" className="h-auto min-h-12 whitespace-normal rounded-full py-3">
               <a href={whatsappUrl} target="_self" rel="noopener noreferrer">Agendar pelo WhatsApp <ArrowRight aria-hidden="true" /></a>

@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import heroAsset from "@/assets/hero.jpg.asset.json";
 import { whatsappUrl } from "@/lib/site-config";
+import { AvisoParticulares } from "./aviso-particulares";
 
 export function Hero() {
   return (
@@ -38,6 +39,7 @@ export function Hero() {
               Conhecer a abordagem
             </a>
           </div>
+          <AvisoParticulares className="mt-6" />
         </motion.div>
 
         <motion.div

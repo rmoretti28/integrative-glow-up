@@ -1,5 +1,6 @@
 import { Leaf, Sparkles, HeartHandshake } from "lucide-react";
 import { whatsappUrl } from "@/lib/site-config";
+import { AvisoParticulares } from "./aviso-particulares";
 import { Reveal } from "./reveal";
 
 const servicos = [
@@ -64,6 +65,7 @@ export function Servicos() {
         </div>
 
         <Reveal delay={0.1} className="mt-12 text-center">
+          <AvisoParticulares className="mx-auto mb-6 text-center" />
           <a
             href={whatsappUrl}
             target="_self"

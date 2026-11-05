@@ -1,5 +1,6 @@
 import { Instagram, MapPin, Clock } from "lucide-react";
 import { siteConfig, whatsappUrl } from "@/lib/site-config";
+import { AvisoParticulares } from "./aviso-particulares";
 import { Reveal } from "./reveal";
 
 export function Rodape() {
