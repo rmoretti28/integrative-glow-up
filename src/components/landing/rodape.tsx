@@ -15,6 +15,7 @@ export function Rodape() {
             Agende sua primeira consulta e descubra o que o seu corpo vem tentando
             comunicar.
           </p>
+          <AvisoParticulares className="mx-auto mt-8 text-center" />
           <a
             href={whatsappUrl}
             target="_self"
