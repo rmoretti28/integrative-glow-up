@@ -9,6 +9,8 @@ export const siteConfig = {
   whatsappExibicao: "(48) 99158-2362",
   endereco: "Atendimento on-line para todo o Brasil e  presencial em Florianópolis",
   horario: "Segunda a sexta, das 8h às 18h",
+  avisoParticulares:
+    "Atendimentos exclusivamente particulares (fornecemos documentação para reembolso)",
 };
 
 export const whatsappUrl = `https://api.whatsapp.com/send?phone=${siteConfig.whatsappNumero}`;
